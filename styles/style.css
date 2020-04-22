@@ -17,9 +17,9 @@ p {
   font-size: 1.3vw;
   border-radius: 15px;
   text-align: center;
+  align-items: center;
   width: 15%;
   height: 40px;
-  padding-top: 10px;
 }
 
 img {

@@ -3,9 +3,12 @@ a {
     color : $color-text;
 }
 
-p {
+h3 {
     color : black;
     font-weight : 600;
     font-size: 1.5vw;
 }
 
+p {
+    color: $color-text;
+}
