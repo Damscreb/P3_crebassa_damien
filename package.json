@@ -1,0 +1,12 @@
+{
+  "name": "le-projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/main.scss:./styles/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+  
+}
