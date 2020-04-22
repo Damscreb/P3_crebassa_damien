@@ -4,10 +4,14 @@ a {
   color: #fccb47;
 }
 
-p {
+h3 {
   color: black;
   font-weight: 600;
   font-size: 1.5vw;
+}
+
+p {
+  color: #fccb47;
 }
 
 .btn__index {
