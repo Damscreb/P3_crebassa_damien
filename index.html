@@ -8,12 +8,12 @@
     </head>
 
     <body>
-        <header>
-            <nav><a href='index.html'>ohmyfood</a></nav> <!-- PENSER A RENTRER L'ADRESSE --> 
+        <header>                <!-- Header, avec le titre comme nav --> 
+            <nav><a href='index.html'>ohmyfood</a></nav> 
         </header>
 
-        <div class='index'>
-            <div class='menus'> <!-- Essayer avec <ul>, div remplacées par li -->
+        <article class='index'>
+            <div class='menus'> <!-- Presentation des différents menus -->
                 <ul>
                     <li><a href="./pages/menu_la_note_enchantee.html"><img src="images/menus/menu-1b.png" alt="Menu 1" /></a></li>
                     <li><a href="./pages/menu_le_chic_a_la_francaise.html"><img src="images/menus/menu-2b.png" alt="Menu 2" /></a></li>
@@ -21,13 +21,18 @@
                     <li><a href="./pages/menu_la_palette_du_gout.html"><img src="images/menus/menu-4b.png" alt="Menu 4" /></a></li>
                 </ul>   
             </div>
-            <div class='next'>
-                <div class='btn__index'><p>Prochainement</p><div class="circles circles__move--1"></div><div class="circles circles__move--2"></div><div class="circles circles__move--3"></div></div>
+                                <!-- Le bouton "Prochainement" --> 
+            <div class='btn__index'>
+                <p>Prochainement</p>
+                <div class='load'>
+                    <div class="load__circles load__circles--1"></div><div class="load__circles load__circles--2"></div><div class="load__circles load__circles--3"></div>
+                </div>
             </div>
-        </div>
 
+        </article>
+                                <!-- Le footer --> 
         <footer>
-            <p><a href='' target='_blank'>Mentions Légales</a></p>   <!-- PENSER A RENTRER L'ADRESSE -->
+            <p><a href='' target='_blank'>Mentions légales</a></p>   <!-- PENSER A RENTRER L'ADRESSE -->
             <p class='contact'><a href=''>Nous contacter</a></p>     <!-- PENSER A RENTRER L'ADRESSE -->
         </footer>
 

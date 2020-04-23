@@ -1,9 +1,9 @@
 @keyframes circles {
   0% {
-    transform: translateY(0);
+    transform: translateY(0.4em);
   }
   100% {
-    transform: translateY(100);
+    transform: translateY(-0.37em);
   }
 }
 a {
@@ -14,25 +14,41 @@ a {
 h3 {
   color: black;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
 }
 
 p {
   color: #fccb47;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+}
 .btn__index {
   color: #fccb47;
   background-color: #569c87;
   font-weight: 700;
-  font-size: 1.3vw;
+  font-size: 3vh;
   border-radius: 15px;
-  text-align: center;
-  align-items: center;
-  width: 15%;
   height: 40px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 5px 10px 5px 15px;
+}
+.btn__index:hover .load__circles {
+  animation: circles 600ms backwards ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.15, -0.14, 0.4, 1.1);
+}
+.btn__index:hover .load__circles--1 {
+  animation-delay: 200ms;
+}
+.btn__index:hover .load__circles--2 {
+  animation-delay: 400ms;
+}
+.btn__index:hover .load__circles--3 {
+  animation-delay: 600ms;
 }
 .btn__index:hover {
   cursor: pointer;
@@ -53,21 +69,19 @@ ul {
   justify-content: space-evenly;
 }
 
-.circles {
-  width: 3vh;
-  height: 3vh;
-  background-color: #fccb47;
+.load {
+  width: 5.5vh;
+  height: 2.2vh;
   display: flex;
   justify-content: space-evenly;
-  /*
-  &__move {
-      animation: circles $anim-dur backwards ease-in-out;
-      @for $i from 1 through $num-circles {
-          &--{#i} {
-              animation-delay: $anim-delay * $i;
-          }
-      }
-  }*/
+}
+.load__circles {
+  transform: translateY(0.4em);
+  position: relative;
+  border-radius: 10px;
+  background-color: #fccb47;
+  width: 1vh;
+  height: 1.1vh;
 }
 
 footer {
@@ -82,7 +96,7 @@ footer {
   justify-content: space-between;
   padding-left: 30px;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: larger;
   overflow-x: auto;
 }
 
@@ -92,12 +106,12 @@ header {
   left: -8px;
   color: #fccb47;
   background-color: #569c87;
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 9vh;
 }
 
 article {
@@ -123,10 +137,6 @@ body {
 .index {
   padding: 50px 150px;
   overflow: hidden;
-}
-
-.next {
-  text-align: -moz-center;
 }
 
 .contact {

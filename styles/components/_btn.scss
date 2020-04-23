@@ -1,20 +1,36 @@
-.btn {
-    &__index{
-    color : $color-text;
-    background-color : $color-main;
-    font-weight: 700;
-    font-size: 1.3vw;
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-    width: 15%;
-    height : 40px;
-    display : flex;
-    flex-direction: row;
- //   padding-top : 10px;
-        &:hover {
-            cursor: pointer;
+// Travail sur les différents boutons
 
+.btn {
+    display: flex;
+    align-items: center;
+
+// Travail sur le bouton de l'index
+
+    &__index{
+        color : $color-text;
+        background-color : $color-main;
+        font-weight: 700;
+        font-size: $font-size;
+        border-radius: 15px;
+        height : 40px;
+        display : flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px 5px 15px;
+        &:hover {
+            .load__circles {
+                animation: circles $anim-dur backwards ease-in-out infinite alternate;
+                animation-timing-function: cubic-bezier(.15,-0.14,.4,1.1);
+                @for $i from 1 through $num-circles {
+                    &--#{$i} {
+                        animation-delay: $anim-delay * $i;
+                    }
+                }
+            }
+        }
+        //----- On met la main quand on passe sur le bouton -----
+        &:hover {   
+        cursor : pointer;
         }
     }
 }
