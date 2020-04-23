@@ -1,4 +1,11 @@
-@charset "UTF-8";
+@keyframes circles {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100);
+  }
+}
 a {
   text-decoration: none;
   color: #fccb47;
@@ -24,6 +31,11 @@ p {
   align-items: center;
   width: 15%;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.btn__index:hover {
+  cursor: pointer;
 }
 
 img {
@@ -41,21 +53,43 @@ ul {
   justify-content: space-evenly;
 }
 
+.circles {
+  width: 3vh;
+  height: 3vh;
+  background-color: #fccb47;
+  display: flex;
+  justify-content: space-evenly;
+  /*
+  &__move {
+      animation: circles $anim-dur backwards ease-in-out;
+      @for $i from 1 through $num-circles {
+          &--{#i} {
+              animation-delay: $anim-delay * $i;
+          }
+      }
+  }*/
+}
+
 footer {
-  width: 96%;
+  width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
   color: #fccb47;
   background-color: #569c87;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 30px;
+  padding-left: 30px;
   font-weight: 600;
   font-size: 1.5vw;
+  overflow-x: auto;
 }
 
 header {
+  position: relative;
+  top: -8px;
+  left: -8px;
   color: #fccb47;
   background-color: #569c87;
   height: 100px;
@@ -73,16 +107,15 @@ article {
   margin: auto;
 }
 
-body {
-  margin-bottom: 90px;
-}
+/*body{
 
-/*              Au cas où       
-body {
     max-width : 1080px;
     margin: auto;
+}*/
+body {
+  margin-bottom: 60px;
 }
-*/
+
 .menus {
   padding: 0 100px;
 }
@@ -94,6 +127,11 @@ body {
 
 .next {
   text-align: -moz-center;
+}
+
+.contact {
+  position: relative;
+  right: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
