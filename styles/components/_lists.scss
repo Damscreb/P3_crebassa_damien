@@ -14,7 +14,8 @@ li {
     box-shadow: 5px 5px 5px 5px grey;
     &:hover{
         .img__index{
-        animation : img__index $anim-dur ease-in-out forwards;
+            transform: scale(1.2);
+            opacity: 75%;
         }
     }
 }

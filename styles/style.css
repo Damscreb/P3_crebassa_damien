@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes circles {
   0% {
     transform: translateY(0.4em);
@@ -6,15 +7,24 @@
     transform: translateY(-0.37em);
   }
 }
+/* ------------ Pas utilisé car passé à transform pour alternate ----------
 @keyframes img__index {
-  0% {
-    transform: scale(1);
-    opacity: 100%;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 75%;
-  }
+    0% {
+        transform : scale(1);
+        opacity: 100%;
+    }
+    100%{
+        transform : scale(1.2);
+        opacity: 75%;
+    }
+}
+animation : img__index $anim-dur ease-in-out forwards alternate;
+ */
+@font-face {
+  /* Définition d'une nouvelle police nommée rubik-regular */
+  font-family: "amble-bold";
+  src: url("amble-bold.eot");
+  src: url("amble-bold.eot?#iefix") format("embedded-opentype"), url("amble-bold.woff") format("woff"), url("amble-bold.ttf") format("truetype"), url("amble-bold#amble-bold") format("svg");
 }
 a {
   text-decoration: none;
@@ -25,10 +35,12 @@ h3 {
   color: black;
   font-weight: 600;
   font-size: 1.5vh;
+  font-family: "amble-bold", Arial, sans-serif;
 }
 
 p {
   color: #fccb47;
+  font-family: "amble-bold", Arial, sans-serif;
 }
 
 .btn {
@@ -67,6 +79,10 @@ p {
 img {
   width: 475px;
   height: 700px;
+  transform: scale(1);
+  transition-duration: 500ms;
+  opacity: 100%;
+  box-shadow: 5px 5px 5px 5px grey;
 }
 
 ul {
@@ -85,7 +101,8 @@ li {
   box-shadow: 5px 5px 5px 5px grey;
 }
 li:hover .img__index {
-  animation: img__index 600ms ease-in-out forwards;
+  transform: scale(1.2);
+  opacity: 75%;
 }
 
 .load {
@@ -129,8 +146,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 9vh;
+  font-family: "amble-bold", Arial, sans-serif;
+  letter-spacing: -6px;
 }
 
 article {
