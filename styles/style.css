@@ -139,9 +139,6 @@ footer {
 }
 
 header {
-  position: relative;
-  top: -8px;
-  left: -8px;
   color: #fccb47;
   background-color: #569c87;
   height: 120px;
@@ -167,7 +164,7 @@ article {
     margin: auto;
 }*/
 body {
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .menus {
