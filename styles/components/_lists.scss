@@ -5,3 +5,16 @@ ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+li {
+    width : 475px;
+    height : 700px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px grey;
+    &:hover{
+        .img__index{
+        animation : img__index $anim-dur ease-in-out forwards;
+        }
+    }
+}
