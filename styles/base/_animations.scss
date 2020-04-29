@@ -7,16 +7,17 @@
     }
 }
 
-/* ------------ Pas utilisé car passé à transform pour alternate ----------
-@keyframes img__index {
-    0% {
-        transform : scale(1);
-        opacity: 100%;
+@keyframes wriggle {
+    22% {
+        transform: translateX(-0.4em);
     }
-    100%{
-        transform : scale(1.2);
-        opacity: 75%;
+    44% {
+        transform: translateX(0.4em);
+    }
+    66% {
+        transform: translateX(-0.4em);
+    }
+    88% {
+        transform: translateX(0.4em);
     }
 }
-animation : img__index $anim-dur ease-in-out forwards alternate;
- */

@@ -4,12 +4,13 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding : 0px;
 }
 
 li {
     width : 475px;
     height : 700px;
-    margin-bottom: 50px;
+    margin : 0 2em 4em 2em;
     overflow: hidden;
     box-shadow: 5px 5px 5px 5px grey;
     &:hover{

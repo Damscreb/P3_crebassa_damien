@@ -7,19 +7,20 @@
     transform: translateY(-0.37em);
   }
 }
-/* ------------ Pas utilisé car passé à transform pour alternate ----------
-@keyframes img__index {
-    0% {
-        transform : scale(1);
-        opacity: 100%;
-    }
-    100%{
-        transform : scale(1.2);
-        opacity: 75%;
-    }
+@keyframes wriggle {
+  22% {
+    transform: translateX(-0.4em);
+  }
+  44% {
+    transform: translateX(0.4em);
+  }
+  66% {
+    transform: translateX(-0.4em);
+  }
+  88% {
+    transform: translateX(0.4em);
+  }
 }
-animation : img__index $anim-dur ease-in-out forwards alternate;
- */
 @font-face {
   /* Définition d'une nouvelle police nommée rubik-regular */
   font-family: "amble-bold";
@@ -58,22 +59,26 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 5px 10px 5px 15px;
+  box-shadow: 3px 3px 3px 3px grey;
 }
 .btn__index:hover {
   cursor: pointer;
 }
 .btn__index:hover .load__circles {
-  animation: circles 600ms backwards ease-in-out infinite alternate;
+  animation: circles 500ms backwards ease-in-out infinite alternate;
   animation-timing-function: cubic-bezier(0.15, -0.14, 0.4, 1.1);
 }
 .btn__index:hover .load__circles--1 {
-  animation-delay: 200ms;
+  animation-delay: 166.6666666667ms;
 }
 .btn__index:hover .load__circles--2 {
-  animation-delay: 400ms;
+  animation-delay: 333.3333333333ms;
 }
 .btn__index:hover .load__circles--3 {
-  animation-delay: 600ms;
+  animation-delay: 500ms;
+}
+.btn__footer:hover {
+  animation: wriggle 500ms backwards ease-in;
 }
 
 img {
@@ -91,12 +96,13 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 0px;
 }
 
 li {
   width: 475px;
   height: 700px;
-  margin-bottom: 50px;
+  margin: 0 2em 4em 2em;
   overflow: hidden;
   box-shadow: 5px 5px 5px 5px grey;
 }
@@ -167,10 +173,9 @@ body {
   margin: 0 0 60px 0;
 }
 
-.menus {
-  padding: 0 100px;
-}
-
+/*.menus {
+    padding : 0 100px;
+}*/
 .index {
   padding: 50px 150px;
   overflow: hidden;
