@@ -1,0 +1,58 @@
+section {
+    transform: scale(1);
+    transition-duration: 500ms;
+    opacity: 100%;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    &__chic--francaise{
+        // Choix des couleurs de fond
+        background: linear-gradient(to right, rgb(199, 116, 18), rgb(152, 101, 251));
+        // background color est cachée sauf pour le texte
+        -webkit-background-clip: text;
+        // La couleur de texte de base est transparente pour laisser apparaitre le dégradé
+        -webkit-text-fill-color: transparent;
+        &__menu{
+            color: rgb(199, 116, 18);
+        }
+    }
+    &__delice--papilles{
+        background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &__menu{
+            color: rgb(8, 135, 251);
+        }
+    }
+    &__palette--gout{
+        background: linear-gradient(to right, rgb(117, 192, 90), rgb(191, 255, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &__menu{
+            color: rgb(117, 192, 90);
+        }
+    }
+}
+
+.note--enchantee {
+    background-color: rgb(252, 223, 219);
+    color: rgb(61, 19, 25);
+}
+
+.chic--francaise{
+    background-color:rgb(255, 245, 254);
+}
+
+.delice--papilles{
+    background-color: rgb(249, 249, 249);
+}
+
+.palette--gout{
+    background-color: rgb(253, 255, 253);
+}

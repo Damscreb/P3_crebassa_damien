@@ -5,17 +5,22 @@ ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding : 0px;
+    img{      // C'est pour le logo de la note enchantée
+        width : 100px;
+        height : 100px;
+        margin-bottom: 25px;
+    }
 }
 
 li {
-    width : 475px;
-    height : 700px;
+    width : 340px;
+    height : 500px;
     margin : 0 2em 4em 2em;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px 5px grey;
+    box-shadow: 3px 3px 5px 5px grey;
+    overflow: hidden; // L'animation ne débordera pas du cadre !
     &:hover{
-        .img__index{
-            transform: scale(1.2);
+        .restaurant{
+            transform: scale(1.4);
             opacity: 75%;
         }
     }

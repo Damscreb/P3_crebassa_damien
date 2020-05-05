@@ -22,10 +22,45 @@
   }
 }
 @font-face {
-  /* Définition d'une nouvelle police nommée rubik-regular */
-  font-family: "amble-bold";
-  src: url("amble-bold.eot");
-  src: url("amble-bold.eot?#iefix") format("embedded-opentype"), url("amble-bold.woff") format("woff"), url("amble-bold.ttf") format("truetype"), url("amble-bold#amble-bold") format("svg");
+  /* Définition d'une nouvelle police nommée amble-bold */
+  font-family: "amble";
+  src: url("./base/fonts/Amble-Regular.eot") format("embedded-opentype");
+  src: url("./base/fonts/Amble-Regular.eot?#iefix") format("embedded-opentype"), url("./base/fonts/Amble-Regular.woff") format("woff"), url("./base/fonts/Amble-Regular.ttf") format("truetype"), url("./base/fonts/Amble-Regular.svg#amblebold") format("svg");
+}
+@font-face {
+  /* Définition d'une nouvelle police nommée devonshire */
+  font-family: "devonshire";
+  src: url("./base/fonts/Devonshire-Regular.woff") format("woff");
+  src: url("./base/fonts/Devonshire-Regular.eot") format("embedded-opentype"), url("./base/fonts/Devonshire-Regular.ttf") format("truetype"), url("./base/fonts/Devonshire-Regular.svg#Devonshire-Regular") format("svg");
+}
+@font-face {
+  /* Définition d'une nouvelle police nommée caveat */
+  font-family: "Caveat";
+  src: url("./base/fonts/Caveat-Regular.eot");
+  src: url("./base/fonts/Caveat-Regular.eot?#iefix") format("embedded-opentype"), url("./base/fonts/Caveat-Regular.woff2") format("woff2"), url("./base/fonts/Caveat-Regular.woff") format("woff"), url("./base/fonts/Caveat-Regular.ttf") format("truetype"), url("./base/fonts/Caveat-Regular.svg#Caveat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Junicode";
+  src: url("./base/fonts/Junicode.eot");
+  src: url("./base/fonts/Junicode.eot?#iefix") format("embedded-opentype"), url("./base/fonts/Junicode.woff2") format("woff2"), url("./base/fonts/Junicode.woff") format("woff"), url("./base/fonts/Junicode.ttf") format("truetype"), url("./base/fonts/Junicode.svg#Junicode") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aguafina";
+  src: url("./base/fonts/AguafinaScript-Regular.eot");
+  src: url("./base/fonts/AguafinaScript-Regular.eot?#iefix") format("embedded-opentype"), url("./base/fonts/AguafinaScript-Regular.woff2") format("woff2"), url("./base/fonts/AguafinaScript-Regular.woff") format("woff"), url("./base/fonts/AguafinaScript-Regular.ttf") format("truetype"), url("./base/fonts/AguafinaScript-Regular.svg#AguafinaScript-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kaushan";
+  src: url("./base/fonts/KaushanScript-Regular.eot");
+  src: url("./base/fonts/KaushanScript-Regular.eot?#iefix") format("embedded-opentype"), url("./base/fonts/KaushanScript-Regular.woff2") format("woff2"), url("./base/fonts/KaushanScript-Regular.woff") format("woff"), url("./base/fonts/KaushanScript-Regular.ttf") format("truetype"), url("./base/fonts/KaushanScript-Regular.svg#KaushanScript-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 a {
   text-decoration: none;
@@ -36,12 +71,48 @@ h3 {
   color: black;
   font-weight: 600;
   font-size: 1.5vh;
-  font-family: "amble-bold", Arial, sans-serif;
+  font-family: "amble", Arial, sans-serif;
 }
 
-p {
+.btn__index {
   color: #fccb47;
-  font-family: "amble-bold", Arial, sans-serif;
+  font-family: "amble", Arial, sans-serif;
+}
+.btn__footer {
+  color: #fccb47;
+  font-family: "amble", Arial, sans-serif;
+}
+
+.restaurant__note--enchantee {
+  margin: 0;
+  font-family: "devonshire", Arial, sans-serif;
+}
+.restaurant__note--enchantee__menu {
+  font-family: "caveat", Arial, sans-serif;
+  font-weight: bold;
+}
+.restaurant__chic--francaise {
+  font-family: "Junicode", Arial, sans-serif;
+  font-size: smaller;
+}
+.restaurant__chic--francaise__menu {
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 0px;
+}
+.restaurant__delice--papilles {
+  font-family: "aguafina", Arial, sans-serif;
+}
+.restaurant__delice--papilles__menu {
+  font-family: "caveat", Arial, sans-serif;
+  margin-top: 0px;
+}
+.restaurant__palette--gout {
+  font-family: "Kaushan", Arial, sans-serif;
+}
+.restaurant__palette--gout__menu {
+  font-family: "caveat", Arial, sans-serif;
+  margin-top: 0px;
 }
 
 .btn {
@@ -54,6 +125,7 @@ p {
   font-weight: 700;
   font-size: 3vh;
   border-radius: 15px;
+  border: 2px solid #569c87;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -77,17 +149,11 @@ p {
 .btn__index:hover .load__circles--3 {
   animation-delay: 500ms;
 }
+.btn__footer {
+  transform: translateY(0);
+}
 .btn__footer:hover {
   animation: wriggle 500ms backwards ease-in;
-}
-
-img {
-  width: 475px;
-  height: 700px;
-  transform: scale(1);
-  transition-duration: 500ms;
-  opacity: 100%;
-  box-shadow: 5px 5px 5px 5px grey;
 }
 
 ul {
@@ -98,16 +164,21 @@ ul {
   justify-content: space-evenly;
   padding: 0px;
 }
+ul img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
 
 li {
-  width: 475px;
-  height: 700px;
+  width: 340px;
+  height: 500px;
   margin: 0 2em 4em 2em;
+  box-shadow: 3px 3px 5px 5px grey;
   overflow: hidden;
-  box-shadow: 5px 5px 5px 5px grey;
 }
-li:hover .img__index {
-  transform: scale(1.2);
+li:hover .restaurant {
+  transform: scale(1.4);
   opacity: 75%;
 }
 
@@ -124,6 +195,62 @@ li:hover .img__index {
   background-color: #fccb47;
   width: 1vh;
   height: 1.1vh;
+}
+
+section {
+  transform: scale(1);
+  transition-duration: 500ms;
+  opacity: 100%;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.restaurant__chic--francaise {
+  background: linear-gradient(to right, #c77412, #9865fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__chic--francaise__menu {
+  color: #c77412;
+}
+.restaurant__delice--papilles {
+  background: linear-gradient(to right, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__delice--papilles__menu {
+  color: #0887fb;
+}
+.restaurant__palette--gout {
+  background: linear-gradient(to right, #75c05a, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__palette--gout__menu {
+  color: #75c05a;
+}
+
+.note--enchantee {
+  background-color: #fcdfdb;
+  color: #3d1319;
+}
+
+.chic--francaise {
+  background-color: #fff5fe;
+}
+
+.delice--papilles {
+  background-color: #f9f9f9;
+}
+
+.palette--gout {
+  background-color: #fdfffd;
 }
 
 footer {
@@ -153,8 +280,8 @@ header {
   justify-content: center;
   font-weight: 700;
   font-size: 9vh;
-  font-family: "amble-bold", Arial, sans-serif;
-  letter-spacing: -6px;
+  font-family: "amble", Arial, sans-serif;
+  letter-spacing: -10px;
 }
 
 article {
@@ -162,6 +289,7 @@ article {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  font-size: xx-large;
 }
 
 /*body{
@@ -177,7 +305,7 @@ body {
     padding : 0 100px;
 }*/
 .index {
-  padding: 50px 150px;
+  padding: 50px 0px;
   overflow: hidden;
 }
 
