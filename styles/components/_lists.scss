@@ -15,8 +15,8 @@ ul {
 li {
     width : 340px;
     height : 500px;
-    margin : 0 2em 4em 2em;
-    box-shadow: 3px 3px 5px 5px grey;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
+    margin-top : 20px;
     overflow: hidden; // L'animation ne débordera pas du cadre !
     &:hover{
         .restaurant{

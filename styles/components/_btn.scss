@@ -9,16 +9,18 @@
     &__index{
         color : $color-text;
         background-color : $color-main;
+        align-self: center;
         font-weight: 700;
         font-size: $font-size;
         border-radius: 15px;
         border : 2px solid $color-main;
+        margin-top: 40px;
         height : 40px;
         display : flex;
         flex-direction: row;
         align-items: center;
         padding: 5px 10px 5px 15px;
-        box-shadow: 3px 3px 3px 3px grey;
+        box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
         &:hover {
         //----- On met la main quand on passe sur le bouton -----
             cursor : pointer;
