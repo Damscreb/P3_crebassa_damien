@@ -67,11 +67,21 @@ a {
   color: #fccb47;
 }
 
+h1 {
+  margin-top: 0px;
+}
+
 h3 {
   color: black;
   font-weight: 600;
-  font-size: 1.5vh;
+  font-size: 50px;
   font-family: "amble", Arial, sans-serif;
+}
+
+h4 {
+  margin: 20px 20px;
+  font-weight: bolder;
+  font-size: xxx-large;
 }
 
 .btn__index {
@@ -172,14 +182,14 @@ ul img {
   margin-bottom: 25px;
 }
 
-li {
+.list__restau {
   width: 340px;
   height: 500px;
   box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
   overflow: hidden;
 }
-li:hover .restaurant {
+.list__restau:hover .restaurant {
   transform: scale(1.4);
   opacity: 75%;
 }
@@ -255,7 +265,7 @@ section {
   background-color: #fdfffd;
 }
 
-footer {
+.footer__index {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -273,7 +283,7 @@ footer {
   margin-left: 2em;
 }
 
-header {
+.header__index {
   color: #fccb47;
   background-color: #569c87;
   height: 120px;
@@ -293,18 +303,10 @@ article {
   font-size: xx-large;
 }
 
-/*body{
-
-    max-width : 1080px;
-    margin: auto;
-}*/
 body {
   margin: 0 0 60px 0;
 }
 
-/*.menus {
-    padding : 0 100px;
-}*/
 .index {
   padding: 30px 0px;
   overflow: hidden;
@@ -313,6 +315,62 @@ body {
 .contact {
   position: relative;
   right: 60px;
+}
+
+.article__note--enchantee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.menu__note--enchantee {
+  background-color: #fcdfdb;
+  color: #3d1319;
+  font-family: "caveat", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 50px 0px;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.title__menu--ne {
+  background-color: #fcdfdb;
+  color: #3d1319;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "devonshire", Arial, sans-serif;
+}
+
+.subtitle__menu--ne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.food--ne {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.end__menu--ne {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-family: "devonshire", Arial, sans-serif;
+}
+.end__menu--ne img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
