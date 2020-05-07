@@ -1,0 +1,55 @@
+.article__chic--francaise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
+.menu__chic--francaise {
+    background-color:rgb(255, 245, 254);
+    //color: ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 50px 0px;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
+}
+
+.title__menu--cf {
+    background-color: rgb(255, 245, 254);
+    background: linear-gradient(to right, rgb(199, 116, 18), rgb(152, 101, 251));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Junicode', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.subtitle__menu--cf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: initial;
+}
+
+.food--cf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: initial;
+}
+
+.price--cf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: initial;
+}

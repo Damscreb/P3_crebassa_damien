@@ -78,12 +78,6 @@ h3 {
   font-family: "amble", Arial, sans-serif;
 }
 
-h4 {
-  margin: 20px 20px;
-  font-weight: bolder;
-  font-size: xxx-large;
-}
-
 .btn__index {
   color: #fccb47;
   font-family: "amble", Arial, sans-serif;
@@ -258,7 +252,7 @@ section {
 }
 
 .delice--papilles {
-  background-color: #f9f9f9;
+  background-color: #eef0ef;
 }
 
 .palette--gout {
@@ -353,8 +347,19 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+.subtitle__menu--ne h4 {
+  margin: 20px 20px;
+  font-weight: bolder;
+  font-size: xxx-large;
+}
 
 .food--ne {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price--ne {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -371,6 +376,164 @@ body {
   height: 60px;
   position: relative;
   top: 18px;
+}
+
+.article__chic--francaise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.menu__chic--francaise {
+  background-color: #fff5fe;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 50px 0px;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.title__menu--cf {
+  background-color: #fff5fe;
+  background: linear-gradient(to right, #c77412, #9865fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Junicode", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.subtitle__menu--cf {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: initial;
+}
+
+.food--cf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: initial;
+}
+
+.price--cf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: initial;
+}
+
+.article__palette--gout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.menu__palette--gout {
+  background-color: #fdfffd;
+  color: black;
+  font-family: "caveat", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 50px 0px;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.title__menu--pg {
+  background-color: #fdfffd;
+  background: linear-gradient(to right, #75c05a, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "aguafina", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.subtitle__menu--pg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.food--pg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price--pg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article__delice--papilles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.menu__delice--papilles {
+  background-color: #eef0ef;
+  color: black;
+  font-family: "caveat", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 50px 0px;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.title__menu--dp {
+  background-color: #eef0ef;
+  background: linear-gradient(to right, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "aguafina", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.subtitle__menu--dp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.food--dp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price--dp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
