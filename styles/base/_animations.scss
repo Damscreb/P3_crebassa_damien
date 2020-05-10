@@ -21,3 +21,12 @@
         transform: translateX(0.4em);
     }
 }
+
+@keyframes underline {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1);
+    }
+}

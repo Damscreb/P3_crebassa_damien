@@ -1,0 +1,12 @@
+
+h4 {
+    &:hover {
+        .underline{
+            animation: underline;
+        }
+    }
+}
+
+.underline {
+    transform-origin: left;
+}

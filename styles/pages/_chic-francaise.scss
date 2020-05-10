@@ -8,7 +8,7 @@
 
 
 .menu__chic--francaise {
-    background-color:rgb(255, 245, 254);
+    background-color:$bgcolor--cf;
     //color: ;
     font-family: Arial, sans-serif;
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .title__menu--cf {
-    background-color: rgb(255, 245, 254);
+    background-color: $bgcolor--cf;
     background: linear-gradient(to right, rgb(199, 116, 18), rgb(152, 101, 251));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

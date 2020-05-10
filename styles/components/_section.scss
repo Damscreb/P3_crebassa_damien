@@ -41,18 +41,18 @@ section {
 }
 
 .note--enchantee {
-    background-color: rgb(252, 223, 219);
+    background-color: $bgcolor--ne;
     color: rgb(61, 19, 25);
 }
 
 .chic--francaise{
-    background-color:rgb(255, 245, 254);
+    background-color: $bgcolor--cf;
 }
 
 .delice--papilles{
-    background-color: rgb(238, 240, 239);
+    background-color: $bgcolor--dp;
 }
 
 .palette--gout{
-    background-color: rgb(253, 255, 253);
+    background-color: $bgcolor--pg;
 }

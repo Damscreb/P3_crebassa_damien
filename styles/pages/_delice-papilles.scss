@@ -7,7 +7,7 @@
 }
 
 .menu__delice--papilles {
-    background-color: rgb(238, 240, 239);
+    background-color: $bgcolor--dp;
     color: black;
     font-family: 'caveat', Arial, sans-serif;
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .title__menu--dp {
-    background-color: rgb(238, 240, 239);
+    background-color: $bgcolor--dp;
     background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

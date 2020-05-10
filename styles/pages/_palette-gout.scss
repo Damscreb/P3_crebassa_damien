@@ -7,7 +7,7 @@
 }
 
 .menu__palette--gout {
-    background-color: rgb(253, 255, 253);
+    background-color: $bgcolor--pg;
     color: black;
     font-family: 'caveat', Arial, sans-serif;
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .title__menu--pg {
-    background-color: rgb(253, 255, 253);
+    background-color: $bgcolor--pg;
     background: linear-gradient(to right, rgb(117, 192, 90), rgb(191, 255, 126));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
