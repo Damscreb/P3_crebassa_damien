@@ -342,10 +342,10 @@ body {
 .title__menu--ne {
   background-color: #fcdfdb;
   color: #3d1319;
+  font-family: "devonshire", Arial, sans-serif;
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: "devonshire", Arial, sans-serif;
 }
 
 .subtitle__menu--ne {
@@ -360,6 +360,22 @@ body {
   margin: 20px 20px;
   font-weight: bolder;
   font-size: xxx-large;
+  position: relative;
+}
+.subtitle__menu--ne h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #3d1319;
+}
+.subtitle__menu--ne h4:hover::after {
+  transform: scaleX(1.05);
 }
 
 .food--ne {
@@ -427,13 +443,13 @@ body {
   background: linear-gradient(to right, #c77412, #9865fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-family: "Junicode", Arial, sans-serif;
   font-size: xxx-large;
   margin-bottom: 40px;
   margin-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle__menu--cf {
@@ -445,7 +461,68 @@ body {
   font-size: initial;
 }
 .subtitle__menu--cf h4 {
-  font-size: 25px;
+  font-size: larger;
+  position: relative;
+}
+
+.color1 h4 {
+  font-size: larger;
+  position: relative;
+}
+.color1 h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #c67412;
+}
+.color1 h4:hover::after {
+  transform: scaleX(1);
+}
+
+.color2 h4 {
+  font-size: larger;
+  position: relative;
+}
+.color2 h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #a56799;
+}
+.color2 h4:hover::after {
+  transform: scaleX(1);
+}
+
+.color3 h4 {
+  font-size: larger;
+  position: relative;
+}
+.color3 h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #6e4ccc;
+}
+.color3 h4:hover::after {
+  transform: scaleX(1);
 }
 
 .food--cf {
@@ -460,7 +537,6 @@ body {
   flex-direction: column;
   align-items: flex-end;
   font-size: 18px;
-  align-items: flex-end;
 }
 
 .color1 {
@@ -503,13 +579,13 @@ body {
   background: linear-gradient(to right, #75c05a, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-family: "aguafina", Arial, sans-serif;
   font-size: 5vw;
   width: 110%;
   margin: 20px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle__menu--pg {
@@ -518,6 +594,25 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+}
+.subtitle__menu--pg h4 {
+  margin: 20px 20px;
+  position: relative;
+}
+.subtitle__menu--pg h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #75c05a;
+}
+.subtitle__menu--pg h4:hover::after {
+  transform: scaleX(1);
 }
 
 .food--pg {
@@ -562,13 +657,13 @@ body {
   background: linear-gradient(to right, #0431df, #0887fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-family: "aguafina", Arial, sans-serif;
   font-size: 4vw;
   width: 110%;
   margin: 20px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle__menu--dp {
@@ -576,13 +671,32 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .subtitle__menu--dp--2 img {
   opacity: 80%;
 }
 .subtitle__menu--dp--3 img {
   opacity: 60%;
+}
+.subtitle__menu--dp h4 {
+  margin: 20px 20px;
+  position: relative;
+}
+.subtitle__menu--dp h4::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transition: transform 350ms;
+  background: #0431df;
+}
+.subtitle__menu--dp h4:hover::after {
+  transform: scaleX(1);
 }
 
 .food--dp {

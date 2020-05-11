@@ -1,21 +1,12 @@
 .article__chic--francaise {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+    @include article;
 }
 
 
 .menu__chic--francaise {
     background-color:$bgcolor--cf;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    padding: 50px 0px;
-    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
+    @include menu;
 }
 
 .title__menu--cf {
@@ -23,24 +14,61 @@
     background: linear-gradient(to right, rgb(199, 116, 18), rgb(152, 101, 251));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     font-family: 'Junicode', Arial, sans-serif;
     font-size: xxx-large;
     margin-bottom : 40px;
     margin-top: 20px;
+    @include title;
 }
 
 .subtitle__menu--cf {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+    @include subtitle;
     font-size: initial;
     & h4 {
-        font-size: 25px;
+        font-size: larger;
+        position: relative;
+    }  
+}
+
+.color1 {
+    & h4 {
+        font-size: larger;
+        position: relative;
+        &::after {
+            @include underline;
+            background: rgb(198, 116, 18);}
+        &:hover {
+            &::after{
+                transform: scaleX(1);}
+        }
+    }
+}
+
+.color2 {
+    & h4 {
+        font-size: larger;
+        position: relative;
+        &::after {
+            @include underline;
+            background: rgb(165, 103, 153);}
+        &:hover {
+            &::after{
+                transform: scaleX(1);}
+        }
+    }
+}
+
+.color3 {
+    & h4 {
+        font-size: larger;
+        position: relative;
+        &::after {
+            @include underline;
+            background: rgb(110, 76, 204);}
+        &:hover {
+            &::after{
+                transform: scaleX(1);}
+        }
     }
 }
 
@@ -52,7 +80,6 @@
 .price--cf {
     @include pagesetting2;
     font-size: 18px;
-    align-items: flex-end;
 }
 
 .color1 {

@@ -1,21 +1,12 @@
 .article__delice--papilles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+    @include article;
 }
 
 .menu__delice--papilles {
     background-color: $bgcolor--dp;
     color: black;
     font-family: 'caveat', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    padding: 50px 0px;
-    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
+    @include menu;
 }
 
 .title__menu--dp {
@@ -23,21 +14,15 @@
     background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     font-family : 'aguafina', Arial, sans-serif;
     font-size: 4vw;
     width : 110%;
     margin : 20px 0px;
+    @include title;
 }
 
 .subtitle__menu--dp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
+    @include subtitle;
     &--2 {
         & img{
         opacity: 80%;
@@ -49,6 +34,20 @@
         opacity: 60%;
         }
     }
+    & h4 {
+        margin: 20px 20px;
+        position: relative;
+        &::after {
+            @include underline;
+            background: rgb(4, 49, 223);
+        }
+    
+        &:hover {
+            &::after{
+                transform: scaleX(1);
+            }
+        }
+    } 
 }
 
 .food--dp {

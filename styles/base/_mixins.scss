@@ -9,3 +9,46 @@
     flex-direction: column;
     align-items: flex-end;
 }
+
+@mixin underline {
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px; 
+    transition: transform 350ms;    
+}
+
+@mixin subtitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+@mixin menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 50px 0px;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.15);
+}
+
+@mixin title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
