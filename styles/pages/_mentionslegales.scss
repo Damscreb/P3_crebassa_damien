@@ -1,0 +1,16 @@
+.blocpage {
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.loremipsum {
+    width: 80%;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: $color-main;
+    font-size: 20px;
+    line-height: 1.2;
+}

@@ -41,17 +41,14 @@
 }
 
 .food--pg {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include pagesetting;
 }
 
 .price--pg {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include pagesetting;
 }
 
 .foodprice--2 {
-    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
 }

@@ -9,7 +9,6 @@
 
 .menu__chic--francaise {
     background-color:$bgcolor--cf;
-    //color: ;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -28,7 +27,9 @@
     display: flex;
     flex-direction: column;
     font-family: 'Junicode', Arial, sans-serif;
-    font-size: xx-large;
+    font-size: xxx-large;
+    margin-bottom : 40px;
+    margin-top: 20px;
 }
 
 .subtitle__menu--cf {
@@ -36,20 +37,34 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: initial;
+    & h4 {
+        font-size: 25px;
+    }
 }
 
 .food--cf {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: initial;
+    @include pagesetting;
+    font-size: 18px;
 }
 
 .price--cf {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: initial;
+    @include pagesetting;
+    font-size: 18px;
+}
+
+.color1 {
+    color: rgb(198, 116, 18);
+    line-height: 2;
+}
+
+.color2 {
+    color: rgb(165, 103, 153);
+    line-height: 2;
+}
+
+.color3 {
+    color: rgb(110, 76, 204);
+    line-height: 2;
 }

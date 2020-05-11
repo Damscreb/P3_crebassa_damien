@@ -52,13 +52,9 @@
 }
 
 .food--dp {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include pagesetting;
 }
 
 .price--dp {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include pagesetting;
 }

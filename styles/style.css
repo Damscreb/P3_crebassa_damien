@@ -136,7 +136,7 @@ h3 {
   background-color: #569c87;
   align-self: center;
   font-weight: 700;
-  font-size: 3vh;
+  font-size: 30px;
   border-radius: 15px;
   border: 2px solid #569c87;
   margin-top: 40px;
@@ -293,7 +293,7 @@ section {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 9vh;
+  font-size: 90px;
   font-family: "amble", Arial, sans-serif;
   letter-spacing: -10px;
 }
@@ -431,7 +431,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Junicode", Arial, sans-serif;
-  font-size: xx-large;
+  font-size: xxx-large;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .subtitle__menu--cf {
@@ -439,22 +441,40 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: initial;
+}
+.subtitle__menu--cf h4 {
+  font-size: 25px;
 }
 
 .food--cf {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: initial;
+  font-size: 18px;
 }
 
 .price--cf {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: initial;
+  font-size: 18px;
+}
+
+.color1 {
+  color: #c67412;
+  line-height: 2;
+}
+
+.color2 {
+  color: #a56799;
+  line-height: 2;
+}
+
+.color3 {
+  color: #6e4ccc;
+  line-height: 2;
 }
 
 .article__palette--gout {
@@ -512,7 +532,8 @@ body {
 }
 
 .foodprice--2 {
-  justify-content: space-around;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .article__delice--papilles {
@@ -573,6 +594,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.blocpage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.loremipsum {
+  width: 80%;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  color: #569c87;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=style.css.map */
