@@ -50,8 +50,9 @@
 }
 
 .price--cf {
-    @include pagesetting;
+    @include pagesetting2;
     font-size: 18px;
+    align-items: flex-end;
 }
 
 .color1 {

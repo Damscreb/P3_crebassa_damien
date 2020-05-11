@@ -371,7 +371,7 @@ body {
 .price--ne {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   font-weight: bold;
 }
 
@@ -458,8 +458,9 @@ body {
 .price--cf {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   font-size: 18px;
+  align-items: flex-end;
 }
 
 .color1 {
@@ -528,7 +529,7 @@ body {
 .price--pg {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .foodprice--2 {
@@ -593,7 +594,7 @@ body {
 .price--dp {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .blocpage {
