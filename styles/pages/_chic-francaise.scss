@@ -16,6 +16,7 @@
     -webkit-text-fill-color: transparent;
     font-family: 'Junicode', Arial, sans-serif;
     font-size: xxx-large;
+    text-align: center;
     margin-bottom : 40px;
     margin-top: 20px;
     @include title;
@@ -23,7 +24,8 @@
 
 .subtitle__menu--cf {
     @include subtitle;
-    font-size: initial;
+    font-size: 2vh;
+    text-align: center;
     & h4 {
         font-size: larger;
         position: relative;
@@ -31,6 +33,7 @@
 }
 
 .color1 {
+    color: rgb(198, 116, 18);
     & h4 {
         font-size: larger;
         position: relative;
@@ -45,6 +48,7 @@
 }
 
 .color2 {
+    color: rgb(165, 103, 153);
     & h4 {
         font-size: larger;
         position: relative;
@@ -59,6 +63,7 @@
 }
 
 .color3 {
+    color: rgb(110, 76, 204);
     & h4 {
         font-size: larger;
         position: relative;
@@ -75,24 +80,11 @@
 .food--cf {
     @include pagesetting;
     font-size: 18px;
+    line-height: 2;
 }
 
 .price--cf {
     @include pagesetting2;
     font-size: 18px;
-}
-
-.color1 {
-    color: rgb(198, 116, 18);
-    line-height: 2;
-}
-
-.color2 {
-    color: rgb(165, 103, 153);
-    line-height: 2;
-}
-
-.color3 {
-    color: rgb(110, 76, 204);
     line-height: 2;
 }

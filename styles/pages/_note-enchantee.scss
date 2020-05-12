@@ -14,6 +14,7 @@
     color: rgb(61, 19, 25);
     font-family: 'devonshire', Arial, sans-serif;
     @include title;
+    font-size : 1.3em;
 }
 
 .subtitle__menu--ne {
@@ -22,7 +23,7 @@
     & h4 {
         margin: 20px 20px;
         font-weight: bolder;
-        font-size: xxx-large;
+        font-size: 1.3em;
         position: relative;
         &::after {
             @include underline;
@@ -64,12 +65,4 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%
-}
-
-.blocmenu {
-    width: 80%;
-    height:100%;
-    img {
-        width: 15vw;
-    }
 }
