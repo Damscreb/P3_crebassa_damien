@@ -746,6 +746,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
 }
 
 .loremipsum {
@@ -755,6 +757,7 @@ body {
   color: #569c87;
   font-size: 20px;
   line-height: 1.2;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
