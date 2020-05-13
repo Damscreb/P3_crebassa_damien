@@ -5,7 +5,7 @@
 
 .menu__chic--francaise {
     background-color:$bgcolor--cf;
-    font-family: Arial, sans-serif;
+    font-family: 'Aver', Arial, sans-serif;
     @include menu;
 }
 
@@ -15,7 +15,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Junicode', Arial, sans-serif;
-    font-size: xxx-large;
+    font-size: 60px;
     text-align: center;
     margin-bottom : 40px;
     margin-top: 20px;
@@ -80,11 +80,9 @@
 .food--cf {
     @include pagesetting;
     font-size: 18px;
-    line-height: 2;
 }
 
 .price--cf {
     @include pagesetting2;
     font-size: 18px;
-    line-height: 2;
 }

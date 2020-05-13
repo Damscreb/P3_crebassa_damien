@@ -1,10 +1,7 @@
 ul {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     padding : 0px;
+    line-height: 25px;
     img{      // C'est pour le logo de la note enchantée
         width : 100px;
         height : 100px;

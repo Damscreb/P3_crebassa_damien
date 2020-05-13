@@ -15,7 +15,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family : 'aguafina', Arial, sans-serif;
-    font-size: 5vw;
+    font-size: 70px;
     width : 110%;
     margin : 20px 0px;
     @include title;
@@ -23,6 +23,7 @@
 
 .subtitle__menu--pg {
     @include subtitle;
+    text-align: center;
     & h4 {
         margin: 20px 20px;
         position: relative;

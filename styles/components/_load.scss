@@ -1,16 +1,15 @@
 // Création des 3 petits points
 
 .load{
-    width : 5.5vh ;
-    height : $height_circles * 2;
+    width : 40px;
     display: flex;
     justify-content: space-evenly;
     &__circles {
-        transform: translateY(0.4em);
+        transform: translateY(7px);
         position: relative;
-        border-radius: 10px;
+        border-radius: 7px;
         background-color: $color-text;
-        width: $width-circles;
-        height: $height-circles;
+        width: 6px;
+        height: 6px;
     }
 }

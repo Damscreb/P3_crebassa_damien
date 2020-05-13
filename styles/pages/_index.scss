@@ -7,3 +7,10 @@
     position: relative;
     right : 60px;
 }
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

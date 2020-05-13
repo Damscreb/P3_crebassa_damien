@@ -1,16 +1,14 @@
-section {
+.restaurant {
+    height: 100%;
     transform: scale(1);
     transition-duration: 500ms;
     opacity: 100%;
-    vertical-align: middle;
     display: flex;
+    vertical-align: middle;
     flex-direction: column;
-}
-
-.restaurant {
-    height: 100%;
     align-items: center;
     justify-content: center;
+
     &__chic--francaise{
         // Choix des couleurs de fond
         background: linear-gradient(to right, rgb(199, 116, 18), rgb(152, 101, 251));
@@ -21,7 +19,9 @@ section {
         &__menu{
             color: rgb(199, 116, 18);
         }
+        line-height: initial;
     }
+
     &__delice--papilles{
         background: linear-gradient(to right, rgb(4, 49, 223), rgb(8, 135, 251));
         -webkit-background-clip: text;
@@ -29,7 +29,9 @@ section {
         &__menu{
             color: rgb(8, 135, 251);
         }
+        line-height: initial;
     }
+    
     &__palette--gout{
         background: linear-gradient(to right, rgb(117, 192, 90), rgb(191, 255, 126));
         -webkit-background-clip: text;
@@ -37,6 +39,7 @@ section {
         &__menu{
             color: rgb(117, 192, 90);
         }
+        line-height: initial;
     }
 }
 
