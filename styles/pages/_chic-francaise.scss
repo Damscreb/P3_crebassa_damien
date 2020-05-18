@@ -24,12 +24,12 @@
 
 .subtitle__menu--cf {
     @include subtitle;
-    font-size: 2vh;
+    font-size: 18px;
     text-align: center;
     & h4 {
         font-size: larger;
         position: relative;
-    }  
+    }
 }
 
 .color1 {
