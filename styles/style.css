@@ -832,5 +832,80 @@ body {
     font-size: 40px;
   }
 }
+@media all and (max-device-width: 480px) {
+  .list__restau {
+    width: 400px;
+    height: 580px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  .title__menu--ne h1, .end__menu--ne h1 {
+    font-size: 55px;
+  }
+
+  .title__menu--dp h1, .title__menu--pg h1, .title__menu--cf h1 {
+    font-size: 75px;
+  }
+
+  .btn__index {
+    margin-top: 50px;
+  }
+
+  .foodprice {
+    font-size: 35px;
+  }
+  .foodprice p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .foodprice--2 {
+    font-size: 45px;
+  }
+  .foodprice .food--pg, .foodprice .price--pg, .foodprice .food--dp, .foodprice .price--dp {
+    line-height: 1;
+    font-size: 40px;
+  }
+
+  .food--cf, .price--cf {
+    font-size: 30px;
+  }
+
+  .subtitle__menu--ne h4 {
+    font-size: 45px;
+  }
+  .subtitle__menu--ne img {
+    width: 22%;
+    height: 8px;
+  }
+  .subtitle__menu--cf h4 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .subtitle__menu--cf img {
+    width: 22%;
+    height: 8px;
+  }
+  .subtitle__menu--dp h4 {
+    font-size: 45px;
+  }
+  .subtitle__menu--dp img {
+    width: 18%;
+    height: 8px;
+  }
+  .subtitle__menu--pg h4 {
+    font-size: 45px;
+  }
+  .subtitle__menu--pg img {
+    width: 22%;
+    height: 8px;
+  }
+
+  .mention, .contact {
+    font-size: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
