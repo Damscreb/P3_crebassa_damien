@@ -166,5 +166,21 @@
 
     .mention, .contact {
         font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .loremipsum {
+        & span {
+            font-size : 35px;
+        }
+    }
+
+    .mobile {
+        margin-bottom : 80px;
+    }
+
+    .non-mobile {
+        display: none;
     }
 }
