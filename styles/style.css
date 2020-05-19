@@ -771,7 +771,7 @@ body {
   height: 100%;
 }
 
-@media all and (max-width: 1250px) {
+@media all and (max-width: 1120px) {
   h1 {
     font-size: 30px;
   }
