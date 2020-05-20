@@ -281,11 +281,6 @@ ul img {
   max-width: 1100px;
 }
 
-.contact {
-  position: relative;
-  right: 60px;
-}
-
 .menus {
   display: flex;
   flex-direction: row;
@@ -360,16 +355,7 @@ ul img {
   transform: scaleX(1.05);
 }
 
-.food--ne {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .price--ne {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   margin-left: 10px;
   font-weight: bold;
 }
@@ -518,16 +504,10 @@ ul img {
 }
 
 .food--cf {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   font-size: 18px;
 }
 
 .price--cf {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   margin-left: 10px;
   font-size: 18px;
 }
@@ -599,16 +579,7 @@ ul img {
   transform: scaleX(1);
 }
 
-.food--pg {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .price--pg {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   margin-left: 10px;
 }
 
@@ -690,16 +661,7 @@ ul img {
   transform: scaleX(1);
 }
 
-.food--dp {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .price--dp {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   margin-left: 10px;
 }
 
@@ -737,7 +699,11 @@ ul img {
 }
 
 .mention {
-  margin-left: 2em;
+  margin-left: 20px;
+}
+
+.contact {
+  margin-right: 20px;
 }
 
 .header__index {
@@ -842,6 +808,22 @@ body {
     font-size: 35px;
   }
 
+  .menu__note--enchantee {
+    width: 90%;
+  }
+
+  .menu__delice--papilles {
+    width: 90%;
+  }
+
+  .menu__chic--francaise {
+    width: 90%;
+  }
+
+  .menu__palette--gout {
+    width: 90%;
+  }
+
   .title__menu--ne h1, .end__menu--ne h1 {
     font-size: 55px;
   }
@@ -852,6 +834,7 @@ body {
 
   .btn__index {
     margin-top: 50px;
+    border: 15px solid #569c87;
   }
 
   .foodprice {

@@ -89,6 +89,22 @@
         font-size: 35px;
     }
 
+    .menu__note--enchantee {
+        width: 90%;
+    }
+
+    .menu__delice--papilles {
+        width: 90%;
+    }
+
+    .menu__chic--francaise {
+        width: 90%;
+    }
+
+    .menu__palette--gout {
+        width: 90%;
+    }
+
     .title__menu--ne, .end__menu--ne {
         h1 {
             font-size : 55px;
@@ -103,6 +119,7 @@
 
     .btn__index {
         margin-top: 50px;
+        border : 15px solid $color-main;
     }
 
     .foodprice {

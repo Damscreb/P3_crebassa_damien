@@ -40,10 +40,6 @@
     }
 }
 
-.food--ne {
-    @include pagesetting;
-}
-
 .price--ne {
     @include pagesetting2;
     font-weight: bold;
